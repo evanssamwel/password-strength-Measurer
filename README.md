@@ -1,16 +1,13 @@
-# Password Strength Meter For angular 6
+# Password Strength Meter For angular 
 
 To display the strength of the password with a visual feedback.
 
 [Password Strength Meter](https://www.npmjs.com/package/angular-password-strength-meter) use [zxcvbn](https://github.com/dropbox/zxcvbn) to estimate the strength of the password and also provide a visual feedback with suggestions and warning messages.
 
-This lib was developed based on the following [tutorial](https://scotch.io/tutorials/password-strength-meter-in-angularjs).
+
 
 How then is password strength measured? `Dropbox developed an algorithm for a realistic password strength estimator inspired by password crackers. This algorithm is packaged in a Javascript library called zxcvbn. In addition, the package contains a dictionary of commonly used English words, names and passwords.`
 
-# Demo
-
-[See Demo Here](https://antoantonyk.github.io/password-strength-meter/)
 
 ```html
   <password-strength-meter [password]="password"></password-strength-meter>

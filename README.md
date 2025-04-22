@@ -52,12 +52,3 @@ export class AppModule { }
   <password-strength-meter [password]="password"></password-strength-meter>
 ```
 
-## API
-
-| option            |   bind   |   type   |                          default                           | description                                                                                                             |
-| :---------------- | :------: | :------: | :--------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------- |
-| password          | Input()  |  string  |                             -                              | password to calculate its strength                                                                                      |
-| minPasswordLength | Input()  |  number  |                             8                              | min length of password to calculate the strength                                                                        |
-| enableFeedback    | Input()  | boolean  |                           false                            | to show/hide the suggestions and warning messages                                                                       |
-| colors            | Input()  | string[] | ['darkred', 'orangered', 'orange', 'yellowgreen', 'green'] | to overide the meter colors, password strength range is 0 - 4, for strength 0 equals first color in the array and so on |
-| strengthChange    | Output() |  number  |                             -                              | emits the strength of the provided password in number -> range 0 - 4                                                    |
